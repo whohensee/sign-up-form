@@ -1,0 +1,116 @@
+:root {
+    --bgc-grey: lightgrey;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#picture {
+    flex: 2;
+    background-color: green;
+}
+
+#text-area {
+    background-color: grey;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#top,
+#middle,
+#bottom {
+    flex: 1;
+}
+
+/* top styling */
+
+#top {
+    /* background-color: lightblue; */
+    background-color: var(--bgc-grey);
+    display: flex;
+    flex-direction: column;
+}
+
+#top p:first-child {
+    margin-top: auto;
+}
+
+
+#middle {
+    background-color: var(--bgc-grey);
+}
+
+#bottom {
+    background-color: var(--bgc-grey);
+}
+
+/* form styling */
+
+#middle p {
+    padding-left: 3rem;
+}
+
+.input-area {
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 0 1.5rem 0;
+    padding-left: 3rem;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.5rem -0.1rem grey;
+}
+
+form p:first-child {
+    margin: 0;
+}
+
+.input-box {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    gap:10px;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+input {
+    border-radius: 5px;
+    /* width: 20rem; */
+    width: 80%;
+    height: 1.5rem;
+    margin-top: -0.2rem;
+    border: grey solid;
+    flex: 1 1 auto;
+}
+
+button {
+    width: 15rem;
+    height: 3rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+input:focus {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+input:invalid {
+    border: red solid;
+}
+
